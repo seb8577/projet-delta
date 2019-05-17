@@ -280,3 +280,403 @@ footer {
 p span {
     color: #fff;
 }
+
+#contact {
+    height: 80vh;
+}
+.img-art {
+  width: 100%;
+  height: 100%;
+}
+.nav-bar {
+  margin-right: 15px;
+}
+.box-img-art {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.cont-add-art {
+    height: 80vh;
+    padding-top: 20vh!important;
+}
+
+
+/* ************** */
+/* /Dossier About */
+/* ************** */
+/* GLOBAL */
+body {
+    background-color: #392c22;
+}
+
+h1 {
+    color: #e3c0a6;
+    font-family: 'Comfortaa', 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h5{
+  color: #000;
+  font-family: 'Comfortaa', 'Arial', sans-serif;
+}
+
+p {
+    color: #000;
+    margin: 31px;
+}
+
+/* HEADER */
+/* header {
+  background-color: #000;
+} */
+
+.container-header{
+    padding: 25px;
+}
+
+h1:after {
+    display: block;
+    height: 5px;
+    width: 150px;
+    background-color: #392c22;
+    content: "";
+    margin: 0 auto;
+}
+
+/* PROFIL */
+.img-about{
+  border-radius: 10px;
+}
+
+.modal-body{
+  font-family: 'Indie Flower', cursive;
+  margin: auto;
+}
+
+.modal-ul{
+  background-color: #fff;
+  list-style-type: disclosure-closed;
+}
+
+.container {
+    padding: 40px;
+    max-width: none;
+    width: 80%;
+}
+
+.snip1573 {
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.snip1573 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1573:before,
+.snip1573:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #000;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+  content: '';
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.snip1573:before {
+  -webkit-transform: skew(45deg) translateX(-155%);
+  transform: skew(45deg) translateX(-155%);
+}
+
+.snip1573:after {
+  -webkit-transform: skew(45deg) translateX(155%);
+  transform: skew(45deg) translateX(155%);
+}
+
+.snip1573 img {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1573 figcaption {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  -webkit-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #000;
+}
+
+.snip1573 h3 {
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.snip1573 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.snip1573:hover > img,
+.snip1573.hover > img {
+  opacity: 0.5;
+}
+
+.snip1573:hover:before,
+.snip1573.hover:before {
+  -webkit-transform: skew(45deg) translateX(-55%);
+  transform: skew(45deg) translateX(-55%);
+}
+
+.snip1573:hover:after,
+.snip1573.hover:after {
+  -webkit-transform: skew(45deg) translateX(55%);
+  transform: skew(45deg) translateX(55%);
+}
+
+.snip1573:hover figcaption,
+.snip1573.hover figcaption {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* PAGINATION */
+ul {
+  background-color: #392c22;
+  margin-bottom: 0;
+  padding-bottom: 25px;
+}
+
+li .page-link {
+  color: #000;
+}
+
+li .page-link:hover {
+  color: #000;
+  background-color: #e3c0a6;
+  border: 1px solid #e3c0a6;
+}
+
+.pagination {
+  border-radius: 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    width: 100%;
+}
+
+.copyright {
+    padding: 20px;
+}
+
+.copyright-text {
+    color: #fff;
+    text-align: center;
+}
+
+p span {
+    color: #fff;
+}
+/* ************** */
+/* /Dossier About */
+/* ************** */
+
+
+
+
+/* *** */
+/* MAP */
+/* *****/
+/* GLOBAL */
+
+/* HEADER */
+ul {
+  background-color: #392c22;
+  padding: 10px;
+}
+
+li .page-link {
+  color: #000;
+}
+
+li .page-link:hover {
+  color: #000;
+  background-color: #e3c0a6;
+  border: 1px solid #e3c0a6;
+}
+
+.pagination {
+  border-radius: 0;
+}
+
+/* MAP */
+#mapid { 
+    float: right;
+    margin: 10px;
+    border: solid 2px #fff;
+}
+
+/* CARD */
+/* section {
+        float: left;
+} */
+
+.container {
+        max-width: 1100px;
+}
+
+.col-md-3 {
+        padding-right: 0;
+}
+
+.card-body {
+        text-align: center;
+        border-radius: 5px;
+}
+
+.snip1584 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  width: 100%;
+  color: #fff;
+}
+
+.snip1584 *{
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1584:before {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  top: 100%;
+  content: '';
+  background-color: rgba(51, 51, 51, 0.9);
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -moz-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.snip1584 img {
+background-size: cover;
+width: 300px;
+height: 200px
+}
+
+.snip1584 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.snip1584 h5,
+.snip1584 h6 {
+text-align: center;
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.snip1584 h5 {
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+  text-transform: uppercase;
+  -moz-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  margin-bottom: 5px;
+}
+
+.snip1584 h6 {
+  background-color: #ae895d;
+  padding: 3px 10px;
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.snip1584 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1584:hover:before,
+.snip1584.hover:before {
+  top: 10px;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.snip1584:hover h5,
+.snip1584.hover h5,
+.snip1584:hover h6,
+.snip1584.hover h6 {
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.snip1584:hover h5,
+.snip1584.hover h5 {
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.snip1584:hover h6,
+.snip1584.hover h6 {
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+/* *** */
+/* MAP */
+/* *****/

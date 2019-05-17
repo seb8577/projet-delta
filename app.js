@@ -14,8 +14,8 @@ app.use(bodyParser.urlencoded({
 
 app.use(fileupload())
 
-mongoose.connect('mongodb://localhost:27017/blog', {useNewUrlParser: true});
-
+// mongoose.connect('mongodb://localhost:27017/blog', {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://seb:Use7soap85.@projet-delta-bzx4v.mongodb.net/test?retryWrites=true", {useNewUrlParser: true}).then("mongo conected")
 // handlebars.moment(date)
 var Handlebars    = require("handlebars");
 var MomentHandler = require("handlebars.moment");
