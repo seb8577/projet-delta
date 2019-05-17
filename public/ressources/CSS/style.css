@@ -55,7 +55,7 @@ h3 {
 }
 
 h5{
-    color: #fff;
+    color: #fff!important;
 }
 
 /* ARTICLES HANDLEBARS */
@@ -197,6 +197,7 @@ h2:after {
     display: inline-block;
     outline: none;
     position: relative;
+
   }
   
   .snip1582:before,

@@ -1,56 +1,64 @@
 <!--PAGINATION-->
 <nav aria-label="Page navigation example">
-    <ul class="pagination justify-content-center">
-        <li class="page-item">
-            <a class="page-link" href="#goUp">Top</a>
-        </li>
-    </ul>
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <nav>
+        <a href="#goUp">
+          <button class="snip1582">
+            <h5>Top</h5>
+          </button>&emsp;
+        </a>
+      </nav>
+    </li>
+  </ul>
 </nav>
+
+
 
 <!--FOOTER-->
 <footer>
-    <div class="copyright">
-        <p class="copyright-text"><i class="icon far fa-copyright"></i> sébastien teillet 2019 | Tous
-            droits réservés | <a href="/"><span>mentions légales</span></a></p>
-    </div>
+  <div class="copyright">
+    <p class="copyright-text"><i class="icon far fa-copyright"></i> sébastien teillet 2019 | Tous
+      droits réservés | <a href="/"><span>mentions légales</span></a></p>
+  </div>
 </footer>
 
 <script src="../../public/ressources/js/roadmap.js"></script>
 
 <!-- SCRIPT -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 
 <script src="script.js"></script>
 
 
 <script>
-{{!-- --- --}}
-{{!-- Map --}}
-{{!-- --- --}}
-/* Demo purposes only */
-var snippet = [].slice.call(document.querySelectorAll('.hover'));
-if (snippet.length) {
-  snippet.forEach(function (snippet) {
-    snippet.addEventListener('mouseout', function (event) {
-      if (event.target.parentNode.tagName === 'figure') {
-        event.target.parentNode.classList.remove('hover')
-      } else {
-        event.target.parentNode.classList.remove('hover')
-      }
+  { { !-- --- --} }
+  { { !--Map --} }
+  { { !-- --- --} }
+  /* Demo purposes only */
+  var snippet = [].slice.call(document.querySelectorAll('.hover'));
+  if (snippet.length) {
+    snippet.forEach(function (snippet) {
+      snippet.addEventListener('mouseout', function (event) {
+        if (event.target.parentNode.tagName === 'figure') {
+          event.target.parentNode.classList.remove('hover')
+        } else {
+          event.target.parentNode.classList.remove('hover')
+        }
+      });
     });
-  });
-}
-{{!-- --- --}}
-{{!-- Map --}}
-{{!-- --- --}}
+  }
+  { { !-- --- --} }
+  { { !--Map --} }
+  { { !-- --- --} }
 </script>
 
 </body>
