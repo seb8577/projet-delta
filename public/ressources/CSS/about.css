@@ -1,0 +1,254 @@
+/* DOCUMENT INFORMATION
+        - document : site web photo
+        - version : 1.0.0
+        - author : S. Teillet
+*/
+
+/* COLORS default body text
+        - h1    #e3c0a6
+        - h3    #000
+        - h5    #000
+        - p     #000
+
+        - button        #e3c0a6
+*/
+
+/* FONTS
+        - default
+        - subtitle
+*/
+
+/* CSS DIRECTORY
+        1. global
+        2. header
+        3. profil
+        4. pagination
+        5. footer 
+*/
+
+
+/* GLOBAL */
+body {
+    background-color: #392c22;
+}
+
+h1 {
+    color: #e3c0a6;
+    font-family: 'Comfortaa', 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h5{
+  color: #000;
+  font-family: 'Comfortaa', 'Arial', sans-serif;
+}
+
+p {
+    color: #000;
+    margin: 31px;
+}
+
+/* HEADER */
+header {
+  background-color: #000;
+}
+
+.container-header{
+    padding: 25px;
+}
+
+h1:after {
+    display: block;
+    height: 5px;
+    width: 150px;
+    background-color: #392c22;
+    content: "";
+    margin: 0 auto;
+}
+
+/* PROFIL */
+img{
+  border-radius: 10px;
+}
+
+.col-md-6{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.modal-body{
+  font-family: 'Indie Flower', cursive;
+}
+
+.modal-ul{
+  background-color: #fff;
+  list-style-type: disclosure-closed;
+}
+
+.modal-backdrop.show{
+  opacity: .5;
+  z-index: 5;
+}
+
+.container {
+    padding: 40px;
+}
+
+.snip1573 {
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.snip1573 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1573:before,
+.snip1573:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #000;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+  content: '';
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.snip1573:before {
+  -webkit-transform: skew(45deg) translateX(-155%);
+  transform: skew(45deg) translateX(-155%);
+}
+
+.snip1573:after {
+  -webkit-transform: skew(45deg) translateX(155%);
+  transform: skew(45deg) translateX(155%);
+}
+
+.snip1573 img {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1573 figcaption {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  -webkit-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #000;
+}
+
+.snip1573 h3 {
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.snip1573 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.snip1573:hover > img,
+.snip1573.hover > img {
+  opacity: 0.5;
+}
+
+.snip1573:hover:before,
+.snip1573.hover:before {
+  -webkit-transform: skew(45deg) translateX(-55%);
+  transform: skew(45deg) translateX(-55%);
+}
+
+.snip1573:hover:after,
+.snip1573.hover:after {
+  -webkit-transform: skew(45deg) translateX(55%);
+  transform: skew(45deg) translateX(55%);
+}
+
+.snip1573:hover figcaption,
+.snip1573.hover figcaption {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* PAGINATION */
+ul {
+  background-color: #392c22;
+  margin-bottom: 0;
+  padding-bottom: 25px;
+}
+
+li .page-link {
+  color: #000;
+}
+
+li .page-link:hover {
+  color: #000;
+  background-color: #e3c0a6;
+  border: 1px solid #e3c0a6;
+}
+
+.pagination {
+  border-radius: 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    width: 100%;
+}
+
+.copyright {
+    padding: 20px;
+}
+
+.copyright-text {
+    color: #fff;
+    text-align: center;
+}
+
+p span {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

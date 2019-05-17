@@ -1,0 +1,188 @@
+/* DOCUMENT INFORMATION
+        - document : Map TZN
+        - version : 1.0.0
+        - author : S. Teillet
+*/
+
+/* COLORS default body text    
+        - h5  #fff
+        - h6  #fff  
+
+        - button        #fff      
+        - button:hover  #e3c0a6 
+*/
+
+/* FONTS
+        - default
+        - subtitle
+*/
+
+/* CSS DIRECTORY
+        1. global
+        2. header
+        3. map
+        4. card
+*/
+
+
+/* GLOBAL */
+body {
+    background-color: #fff;
+}
+
+/* HEADER */
+ul {
+  background-color: #392c22;
+  padding: 10px;
+}
+
+li .page-link {
+  color: #000;
+}
+
+li .page-link:hover {
+  color: #000;
+  background-color: #e3c0a6;
+  border: 1px solid #e3c0a6;
+}
+
+.pagination {
+  border-radius: 0;
+}
+
+/* MAP */
+#mapid { 
+    float: right;
+    margin: 10px;
+}
+
+/* CARD */
+section {
+        float: left;
+}
+
+.container {
+        max-width: 1100px;
+}
+
+.col-md-3 {
+        padding-right: 0;
+}
+
+.card-body {
+        text-align: center;
+        border-radius: 5px;
+}
+
+.snip1584 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  width: 100%;
+  color: #fff;
+}
+
+.snip1584 *{
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1584:before {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  top: 100%;
+  content: '';
+  background-color: rgba(51, 51, 51, 0.9);
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -moz-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.snip1584 img {
+background-size: cover;
+width: 300px;
+height: 200px
+}
+
+.snip1584 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.snip1584 h5,
+.snip1584 h6 {
+text-align: center;
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.snip1584 h5 {
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+  text-transform: uppercase;
+  -moz-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  margin-bottom: 5px;
+}
+
+.snip1584 h6 {
+  background-color: #ae895d;
+  padding: 3px 10px;
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.snip1584 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1584:hover:before,
+.snip1584.hover:before {
+  top: 10px;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.snip1584:hover h5,
+.snip1584.hover h5,
+.snip1584:hover h6,
+.snip1584.hover h6 {
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.snip1584:hover h5,
+.snip1584.hover h5 {
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.snip1584:hover h6,
+.snip1584.hover h6 {
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}

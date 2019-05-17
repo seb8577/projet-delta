@@ -1,0 +1,42 @@
+
+<!--HEADER-->
+<header>
+    <!--menu-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>My Travel Blog</h1>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<!--PAGE 1-->
+<section>
+    {{#each posts}}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 bgbox">
+                <p>{{moment createDate format="DD / MM / YYYY"}}</p>
+                <h2>{{title}}</h2>
+                <p class="p-text">{{content}}</p>
+                <nav>
+                    <a href="/articles/{{_id}}">
+                        <button class="snip1582">
+                            <h5>view the photo</h5>
+                        </button>&emsp;
+                    </a>
+                </nav>
+            </div>
+
+            <div class="col-md-6 box-img-art">
+                <img class="img-art" src="{{image}}" alt="placeholder image">
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+</section>
+
+

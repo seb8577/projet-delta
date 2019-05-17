@@ -1,0 +1,23 @@
+<!--LINKS-->
+<div class="container-menu">
+    <div class="row nav-bar">
+        <div class="col-md-12">
+            <div class="dropdown" id="page"></div>
+
+            <script>
+                console.log(window.location.location)
+                if (window.location.pathname !== '/articles/add') {
+                    document.getElementById('page').innerHTML = '<button class="dropbtn">Road trips</button><div class="dropdown-content"><a href="/mapafs">South Africa</a><a href="/maptzn">Tanzania</a></div>'
+                }
+            </script>
+
+            <nav class="links">
+                <h3 class="titles"><a href="/">Home page | </a>
+                    <a href="/about">About me  |  </a>
+                    <a href="/articles/add">Add an article  |  </a>
+                    <a href="/contact">Contact</a>
+                </h3>
+            </nav>
+        </div>
+    </div>
+</div>
