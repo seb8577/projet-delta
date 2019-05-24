@@ -10,8 +10,8 @@ const connectFlash      = require('connect-flash');
 const {stripTags}       = require('./helpers/hbs');
 
 const app        = express();
-mongoose.connect('mongodb://localhost:27017/blog', {useNewUrlParser: true});
-// mongoose.connect("mongodb+srv://seb:Use7soap85.@projet-delta-bzx4v.mongodb.net/test?retryWrites=true", {useNewUrlParser: true}).then("mongo conected")
+// mongoose.connect('mongodb://localhost:27017/blog', {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://seb:Use7soap85.@projet-delta-bzx4v.mongodb.net/test?retryWrites=true", {useNewUrlParser: true}).then("mongo conected")
 
 const mongoStore = MongoStore(expressSession)
 
