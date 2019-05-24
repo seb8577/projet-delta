@@ -4,7 +4,7 @@
     <!--menu-->
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <h1>My Travel Blog</h1>
             </div>
         </div>
@@ -18,9 +18,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 bgbox">
-                <p>{{moment createDate format="DD / MM / YYYY"}}</p>
+                <p class="p-date">{{moment createDate format="DD / MM / YYYY"}}</p>
                 <h2>{{title}}</h2>
-                <p class="p-text">{{content}}</p>
+                <p class="p-text">{{{stripTags content}}}</p>
                 <nav>
                     <a href="/articles/{{_id}}">
                         <button class="snip1582">

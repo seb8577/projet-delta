@@ -1,1 +1,201 @@
-<h1>maptzn</h1>
+<!-- Custom leaflet popup -->
+<style>
+    .leaflet-popup-content-wrapper {
+        border-radius: 5;
+        background: rgb(90, 90, 90);
+        color: #fff;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .leaflet-popup-content {
+        width: 260px;
+        margin: 10px;
+    }
+
+    .leaflet-popup-tip {
+        background: rgb(90, 90, 90);
+    }
+
+    .leaflet-popup-close-button {
+        display: none;
+    }
+</style>
+
+<section>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-tzn/ilboru-lodge.jpg"
+                            alt="sample87" />
+                        <figcaption>
+                            <h5>arusha</h5>
+                            <h6>ilboru safari lodge</h6>
+                        </figcaption><a href="https://www.ilborusafarilodge.com/" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-tzn/tarangire.jpeg"
+                            alt="sample87" />
+                        <figcaption>
+                            <h5>tarangire<br>national park</h5>
+                            <h6>safari</h6>
+                        </figcaption><a href="http://www.tanzanie-authentique.com/Nord-Tanzanie-Parc-national-Tarangire"
+                            target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-tzn/tarangire-lodge.jpg"
+                            alt="sample87" />
+                        <figcaption>
+                            <h5>tarangire river</h5>
+                            <h6>safari lodge</h6>
+                        </figcaption><a href="http://www.tarangiresafarilodge.com/" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-tzn/tarangire-burunge.jpg"
+                            alt="sample87" />
+                        <figcaption>
+                            <h5>tarangire<br>national park</h5>
+                            <h6>burunge tented camp</h6>
+                        </figcaption><a href="http://twctanzania.com/en/accommodation/lake-burunge-tented-lodge/"
+                            target="_blank"></a>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-tzn/serengeti.jpg"
+                            alt="sample87" />
+                        <figcaption>
+                            <h5>serengeti<br>national park</h5>
+                            <h6>safari</h6>
+                        </figcaption><a href="http://www.tanzanie-authentique.com/Nord-Tanzanie-Parc-national-Serengeti"
+                            target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-tzn/kati-kati.jpg"
+                            alt="sample87" />
+                        <figcaption>
+                            <h5>serengeti<br>national park</h5>
+                            <h6>kati kati tented camp</h6>
+                        </figcaption><a href="https://viesauvage.fr/tanzanie-serengeti-kati-kati-camp/"
+                            target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-tzn/migration.jpg"
+                            alt="sample87" />
+                        <figcaption>
+                            <h5>eternal plains</h5>
+                            <h6>great migrations</h6>
+                        </figcaption><a href="http://www.objectif-vacances.com/les-incontournables-de-tanzanie/"
+                            target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-tzn/tloma-lodge.jpg"
+                            alt="sample87" />
+                        <figcaption>
+                            <h5>ngorongoro</h5>
+                            <h6>tloma mountain lodge</h6>
+                        </figcaption><a href="http://twctanzania.com/alojamiento/tloma-lodge/" target="_blank"></a>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-tzn/ngorongoro.jpg"
+                            alt="sample87" />
+                        <figcaption>
+                            <h5>ngorongoro<br>crater</h5>
+                            <h6>safari</h6>
+                        </figcaption><a
+                            href="https://lesdeuxpiedsdehors.com/safari-dans-le-cratere-du-ngorongoro-en-tanzanie/"
+                            target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-tzn/lake-manyara.jpg"
+                            alt="sample87" />
+                        <figcaption>
+                            <h5>lake manyara</h5>
+                            <h6>national park</h6>
+                        </figcaption><a href="https://www.lakemanyara.net/" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-tzn/planet-airport.jpg"
+                            alt="sample87" />
+                        <figcaption>
+                            <h5>arusha</h5>
+                            <h6>airport planet lodge</h6>
+                        </figcaption><a href="https://planet-lodges.com/airport_planet_lodge/" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-tzn/arusha.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>arusha<br>national park</h5>
+                            <h6>walking safari</h6>
+                        </figcaption><a href="https://www.tanzaniatourism.go.tz/en/destination/arusha-national-park"
+                            target="_blank"></a>
+                    </figure>
+                </div>
+
+                <!-- Map size -->
+                <div class="container">
+                    <div class="row">
+                        <div id="mapid" style="width: 100%; height: 80vh; position: relative"></div>
+                    </div>
+                </div>
+            </div>
+</section>
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+    crossorigin=""></script>
+
+<script>
+    let map = L.map('mapid')
+        .setView([-3.173425069507931, 35.6011962890625], 8); // Choose a locality -[lat, lng] zoom property-
+
+    // Map property
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic3RlaWxsZXQiLCJhIjoiY2p1d2YxNjBxMDI5cTQ0bzl0Z2VxYTVtbSJ9.pxMBcq3xS5NN9bN2F2tiBA', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets',
+        accessToken: 'your.mapbox.access.token'
+    }).addTo(map);
+
+    // Create a marker with a popup message
+    L.marker([-3.3493285890343856, 36.686997413635254]).addTo(map).bindPopup("<b>Arusha</b><br /><em>ilboru safari lodge</em>");
+
+    L.marker([-4.053316502797743, 36.09214782714844]).addTo(map).bindPopup("<b>Tarangire National Park</b><br /><em>safari</em>");
+
+    L.marker([-3.7775870409525494, 36.02142333984375]).addTo(map).bindPopup("<b>Tarangire River</b><br /><em>safari lodge</em>");
+
+    L.marker([-3.6186170397817095, 35.71723937988281]).addTo(map).bindPopup("<b>tarangire National Park</b><br /><em>burunge tented camp</em>");
+
+    L.marker([-2.397066538982145, 34.85549926757812]).addTo(map).bindPopup("<b>Serengeti National Park</b><br /><em>safari</em>");
+
+    L.marker([-2.5486738379360627, 34.721946716308594]).addTo(map).bindPopup("<b>Serengeti National Park</b><br /><em>kati kati tented camp</em>");
+
+    L.marker([-2.7235830833483856, 34.947509765625]).addTo(map).bindPopup("<b>Eternal Plains</b><br /><em>great migrations</em>");
+
+    L.marker([-3.098349977699554, 35.435028076171875]).addTo(map).bindPopup("<b>Ngorongoro</b><br /><em>tloma mountain lodge</em>");
+
+    L.marker([-3.1682831124487, 35.57750701904297]).addTo(map).bindPopup("<b>Ngorongoro Crater</b><br /><em>safari</em>");
+
+    L.marker([-3.5771568650530456, 35.826416015625]).addTo(map).bindPopup("<b>Lake Manyara</b><br /><em>national park</em>");
+
+    L.marker([-3.3727414832751497, 37.0484733581543]).addTo(map).bindPopup("<b>Arusha</b><br /><em>airport planet lodge</em>");
+
+    L.marker([-3.235812097803043, 36.76780700683594]).addTo(map).bindPopup("<b>Arusha National Park</b><br /><em>walking safari</em>");
+
+</script>

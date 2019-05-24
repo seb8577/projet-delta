@@ -1,4 +1,4 @@
-<!--LINKS-->
+<!--MENU NAVBAR-->
 <div class="container-menu">
     <div class="row nav-bar">
         <div class="col-md-12">
@@ -7,15 +7,22 @@
             <script>
                 console.log(window.location.location)
                 if (window.location.pathname !== '/articles/add') {
-                    document.getElementById('page').innerHTML = '<button class="dropbtn">Road trips</button><div class="dropdown-content"><a href="/mapafs">South Africa</a><a href="/maptzn">Tanzania</a></div>'
+                    document.getElementById('page').innerHTML = '<button class="dropbtn">Road trips</button><div class="dropdown-content"><a href="/mapafs">South Africa</a><a href="/maptzn">Tanzania</a><a href="/mappb">Péru - Bolivia</a></div>'
                 }
             </script>
 
             <nav class="links">
-                <h3 class="titles"><a href="/">Home page | </a>
-                    <a href="/about">About me  |  </a>
-                    <a href="/articles/add">Add an article  |  </a>
-                    <a href="/contact">Contact</a>
+                <h3 class="titles">
+                    <a href="/">Home page</a>&ensp;|&ensp;
+                    <a href="/about">About me</a>&ensp;|&ensp;
+                    <a href="/contact">Contact</a>&ensp;|&ensp;
+                    {{#if user}}
+                    <a href="/articles/add">Add an article</a>&ensp;|&ensp;
+                    <a href="/user/logout">Sign out&ensp;<i class="fas fa-sign-out-alt"></i></a>&ensp;
+                    {{else}}
+                    <a href="/user/create">Register&ensp;<i class="far fa-registered"></i></a>&ensp;|&ensp;
+                    <a href="/user/login">To log in&ensp;<i class="fas fa-sign-in-alt"></i></a>&ensp;
+                    {{/if}}
                 </h3>
             </nav>
         </div>

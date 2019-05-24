@@ -1,0 +1,41 @@
+<section class="form">
+    <div class="container">
+
+        <!-- messages d'erreurs sur la page register -->
+        {{#each errors}}
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-danger">
+                    {{this}}
+                    <span class="badge-pill"><i class="fas fa-exclamation-triangle"></i></span>
+                </li>
+            </ul>
+        </div>
+        {{/each}}
+
+        <!-- formulaire inscription -->
+        <form action="/user/register" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="text" class="form-control" name="name" id="exampleInputEmail1" placeholder="Name" value={{data.name}}>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" name="email" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="Enter email" value={{data.email}}>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" name="password" id="exampleInputPassword1"
+                    placeholder="Password" value={{data.password}}>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-secondary">Cancel</button>
+        </form>
+
+    </div>
+</section>

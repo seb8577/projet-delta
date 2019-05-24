@@ -1,11 +1,12 @@
+// index
 const Post = require("../database/models/article")
 
-// about
 module.exports = async (req,res) => {
-    const posts = await Post.find({});
-    // Envoie de la page contact.handlebars dans les views
-    // console.log(posts);
-    res.render("index", {
-        posts
-    })
-}
+
+    const posts = await Post.find({});              // Envoie de la page contact.handlebars dans les views
+
+        console.log(req.session);
+    
+    res.render("index", {posts}
+
+)}

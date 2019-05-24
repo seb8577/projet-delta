@@ -1,34 +1,31 @@
+<!-- Custom leaflet popup -->
+<style>
+  .leaflet-popup-content-wrapper {
+    border-radius: 5;
+    background: rgb(90, 90, 90);
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+  }
 
+  .leaflet-popup-content {
+    width: 260px;
+    margin: 10px;
+  }
 
-  <!-- Custom leaflet popup -->
-  <style>
-    .leaflet-popup-content-wrapper {
-      border-radius: 5;
-      background: rgb(90, 90, 90);
-      color: #fff;
-      font-size: 15px;
-      text-align: center;
-    }
+  .leaflet-popup-tip {
+    background: rgb(90, 90, 90);
+  }
 
-    .leaflet-popup-content {
-      width: 260px;
-      margin: 10px;
-    }
+  .leaflet-popup-close-button {
+    display: none;
+  }
+</style>
 
-    .leaflet-popup-tip {
-      background: rgb(90, 90, 90);
-    }
+<section>
+  <div class="container">
+    <div class="col-md-12">
 
-    .leaflet-popup-close-button {
-      display: none;
-    }
-  </style>
-
-  <section>
-    <div class="container">
-      <div class="col-md-12">
-        
-      
       <div class="row">
         <div class="col-md-3">
           <figure class="snip1584"><img src="ressources/images/maps/images-afs/bientang's-cave.jpg" alt="sample87" />
@@ -41,9 +38,9 @@
         <div class="col-md-3">
           <figure class="snip1584"><img src="ressources/images/maps/images-afs/inverdoorn.jpg" alt="sample87" />
             <figcaption>
-              <h5>breed river</h5>
-              <h6>inverdoorn game reserve</h6>
-            </figcaption><a href="https://www.inverdoorn.com/"></a>
+              <h5>breed river<br>inverdoorn</h5>
+              <h6>safari game reserve</h6>
+            </figcaption><a href="https://www.inverdoorn.com/" target="_blank"></a>
           </figure>
         </div>
         <div class="col-md-3">
@@ -51,7 +48,7 @@
             <figcaption>
               <h5>walker bay</h5>
               <h6>nature reserve</h6>
-            </figcaption><a href="https://www.capenature.co.za/reserves/walker-bay-nature-reserve/"></a>
+            </figcaption><a href="https://www.capenature.co.za/reserves/walker-bay-nature-reserve/" target="_blank"></a>
           </figure>
         </div>
         <div class="col-md-3">
@@ -59,7 +56,7 @@
             <figcaption>
               <h5>gansbaai</h5>
               <h6>shark diving</h6>
-            </figcaption><a href="https://www.sharkcagediving.co.za/"></a>
+            </figcaption><a href="https://www.sharkcagediving.co.za/" target="_blank"></a>
           </figure>
         </div>
       </div>
@@ -70,15 +67,15 @@
             <figcaption>
               <h5>eagle encounters</h5>
               <h6>wildlife sanctuary</h6>
-            </figcaption><a href="http://www.eagle-encounters.co.za/"></a>
+            </figcaption><a href="http://www.eagle-encounters.co.za/" target="_blank"></a>
           </figure>
         </div>
         <div class="col-md-3">
           <figure class="snip1584"><img src="ressources/images/maps/images-afs/clos-malverne.jpg" alt="sample87" />
             <figcaption>
               <h5>clos malverne</h5>
-              <h6>restaurant & wine tasting</h6>
-            </figcaption><a href="https://closmalverne.co.za/"></a>
+              <h6>wine tasting</h6>
+            </figcaption><a href="https://closmalverne.co.za/" target="_blank"></a>
           </figure>
         </div>
         <div class="col-md-3">
@@ -86,7 +83,7 @@
             <figcaption>
               <h5>khwa ttu</h5>
               <h6>adventure camp</h6>
-            </figcaption><a href="https://www.khwattu.org/"></a>
+            </figcaption><a href="https://www.khwattu.org/" target="_blank"></a>
           </figure>
         </div>
         <div class="col-md-3">
@@ -94,7 +91,7 @@
             <figcaption>
               <h5>good hope cape</h5>
               <h6>point of view</h6>
-            </figcaption><a href="https://capepoint.co.za/"></a>
+            </figcaption><a href="https://capepoint.co.za/" target="_blank"></a>
           </figure>
         </div>
       </div>
@@ -105,7 +102,7 @@
             <figcaption>
               <h5>boulders beach</h5>
               <h6>penguin colony</h6>
-            </figcaption><a href="https://www.bouldersbeachlodge.com/"></a>
+            </figcaption><a href="https://www.bouldersbeachlodge.com/" target="_blank"></a>
           </figure>
         </div>
         <div class="col-md-3">
@@ -113,7 +110,7 @@
             <figcaption>
               <h5>harbour house</h5>
               <h6>restaurant</h6>
-            </figcaption><a href="http://www.harbourhouse.co.za/"></a>
+            </figcaption><a href="http://www.harbourhouse.co.za/" target="_blank"></a>
           </figure>
         </div>
         <div class="col-md-3">
@@ -121,8 +118,8 @@
             <figcaption>
               <h5>hout bay</h5>
               <h6>beach</h6>
-            </figcaption><a
-              href="https://www.tripadvisor.fr/Attractions-g469392-Activities-Hout_Bay_Western_Cape.html"></a>
+            </figcaption><a href="https://www.tripadvisor.fr/Attractions-g469392-Activities-Hout_Bay_Western_Cape.html"
+              target="_blank"></a>
           </figure>
         </div>
         <div class="col-md-3">
@@ -130,18 +127,19 @@
             <figcaption>
               <h5>west coast</h5>
               <h6>national park</h6>
-            </figcaption><a href="https://www.sanparks.org/parks/west_coast/"></a>
+            </figcaption><a href="https://www.sanparks.org/parks/west_coast/" target="_blank"></a>
           </figure>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-3">
-          <figure class="snip1584"><img src="ressources/images/maps/images-afs/kirstenbosch-garden.jpg" alt="sample87" />
+          <figure class="snip1584"><img src="ressources/images/maps/images-afs/kirstenbosch-garden.jpg"
+              alt="sample87" />
             <figcaption>
               <h5>kirstenbosch garden</h5>
               <h6>national botanical garden</h6>
-            </figcaption><a href="https://www.sanbi.org/gardens/kirstenbosch/"></a>
+            </figcaption><a href="https://www.sanbi.org/gardens/kirstenbosch/" target="_blank"></a>
           </figure>
         </div>
         <div class="col-md-3">
@@ -149,7 +147,8 @@
             <figcaption>
               <h5>table mountain</h5>
               <h6>trekking</h6>
-            </figcaption><a href="https://www.sanparks.org/parks/table_mountain/tourism/attractions.php#goodhope"></a>
+            </figcaption><a href="https://www.sanparks.org/parks/table_mountain/tourism/attractions.php#goodhope"
+              target="_blank"></a>
           </figure>
         </div>
         <div class="col-md-3">
@@ -158,7 +157,8 @@
               <h5>lion's head</h5>
               <h6>trekking</h6>
             </figcaption><a
-              href="https://tripconnexion.com/magazine/decouverte/lions-head-hike-randonnee-exceptionnelle-a-cape-town-en-afrique-du-sud/"></a>
+              href="https://tripconnexion.com/magazine/decouverte/lions-head-hike-randonnee-exceptionnelle-a-cape-town-en-afrique-du-sud/"
+              target="_blank"></a>
           </figure>
         </div>
         <div class="col-md-3">
@@ -166,75 +166,71 @@
             <figcaption>
               <h5>castle of<br>good hope</h5>
               <h6>pentagonal fortress</h6>
-            </figcaption><a href="https://castleofgoodhope.co.za/"></a>
+            </figcaption><a href="https://castleofgoodhope.co.za/" target="_blank"></a>
           </figure>
         </div>
       </div>
     </div>
 
-<div class="container">
-  <div class="row">
-      <div id="mapid" style="width: 100%; height: 80vh; position: relative"></div>
+    <!-- Map size -->
+    <div class="container">
+      <div class="row">
+        <div id="mapid" style="width: 100%; height: 80vh; position: relative"></div>
+      </div>
+    </div>
 
   </div>
-</div>
+</section>
 
-    </div>
-  </section>
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+  crossorigin=""></script>
 
-  <!-- Map size --
+<script>
 
-  <!-- Make sure you put this AFTER Leaflet's CSS -->
-  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-    crossorigin=""></script>
+  let map = L.map('mapid')
+    .setView([-33.92626920481364, 18.419952392578125], 8); // Choose a locality -[lat, lng] zoom property-
 
-  <script>
-
-    let map = L.map('mapid')
-      .setView([-33.92626920481364, 18.419952392578125], 8); // Choose a locality -[lat, lng] zoom property-
-
-    // Map property
-    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic3RlaWxsZXQiLCJhIjoiY2p1d2YxNjBxMDI5cTQ0bzl0Z2VxYTVtbSJ9.pxMBcq3xS5NN9bN2F2tiBA', {
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      id: 'mapbox.streets',
-      accessToken: 'your.mapbox.access.token'
-    }).addTo(map);
+  // Map property
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic3RlaWxsZXQiLCJhIjoiY2p1d2YxNjBxMDI5cTQ0bzl0Z2VxYTVtbSJ9.pxMBcq3xS5NN9bN2F2tiBA', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    id: 'mapbox.streets',
+    accessToken: 'your.mapbox.access.token'
+  }).addTo(map);
 
 
-    // Create a marker with a popup message
-    L.marker([-33.93453015829903, 18.389225006103516]).addTo(map).bindPopup("<b>Lion's Head</b><br /><em>trekking</em>");
+  // Create a marker with a popup message
+  L.marker([-33.93453015829903, 18.389225006103516]).addTo(map).bindPopup("<b>Lion's Head</b><br /><em>trekking</em>");
 
-    L.marker([-33.963579559237495, 18.415145874023438]).addTo(map).bindPopup("<b>Table Mountain</b><br /><em>trekking</em>");
+  L.marker([-33.963579559237495, 18.415145874023438]).addTo(map).bindPopup("<b>Table Mountain</b><br /><em>trekking</em>");
 
-    L.marker([-34.61540923294653, 19.34864044189453]).addTo(map).bindPopup("<b>Gansbaai</b><br /><em>shark diving</em>");
+  L.marker([-34.61540923294653, 19.34864044189453]).addTo(map).bindPopup("<b>Gansbaai</b><br /><em>shark diving</em>");
 
-    L.marker([-33.11483694263137, 19.800281524658203]).addTo(map).bindPopup("<b>Breed River - Inverdoorn</b><br /><em>private game reserve</em>");
+  L.marker([-33.11483694263137, 19.800281524658203]).addTo(map).bindPopup("<b>Breed River - Inverdoorn</b><br /><em>private game reserve</em>");
 
-    L.marker([-33.91077775751776, 18.81507396697998]).addTo(map).bindPopup("<b>Stellenbosche - Clos Malverne</b><br /><em>restaurant & wine tasting</em>");
+  L.marker([-33.91077775751776, 18.81507396697998]).addTo(map).bindPopup("<b>Stellenbosche - Clos Malverne</b><br /><em>restaurant & wine tasting</em>");
 
-    L.marker([-34.48109002095166, 19.36305999755859]).addTo(map).bindPopup("<b>Walker Bay</b><br /><em>nature reserve</em>");
+  L.marker([-34.48109002095166, 19.36305999755859]).addTo(map).bindPopup("<b>Walker Bay</b><br /><em>nature reserve</em>");
 
-    L.marker([-34.197037241692605, 18.450701236724854]).addTo(map).bindPopup("<b>Boulders Beach</b><br /><em>penguin colony</em>");
+  L.marker([-34.197037241692605, 18.450701236724854]).addTo(map).bindPopup("<b>Boulders Beach</b><br /><em>penguin colony</em>");
 
-    L.marker([-34.35691760197429, 18.49689424037933]).addTo(map).bindPopup("<b>Good Hope Cape</b><br /><em>point of view</em>");
+  L.marker([-34.35691760197429, 18.49689424037933]).addTo(map).bindPopup("<b>Good Hope Cape</b><br /><em>point of view</em>");
 
-    L.marker([-33.9258507946873, 18.427741527557373]).addTo(map).bindPopup("<b>Castle of Good Hope</b><br /><em>pentagonal fortress</em>");
+  L.marker([-33.9258507946873, 18.427741527557373]).addTo(map).bindPopup("<b>Castle of Good Hope</b><br /><em>pentagonal fortress</em>");
 
-    L.marker([-33.98895406682826, 18.429222106933594]).addTo(map).bindPopup("<b>Kirstenbosche Garden</b><br /><em>national botanical garden</em>");
+  L.marker([-33.98895406682826, 18.429222106933594]).addTo(map).bindPopup("<b>Kirstenbosche Garden</b><br /><em>national botanical garden</em>");
 
-    L.marker([-34.045370053873896, 18.352274894714355]).addTo(map).bindPopup("<b>Hout Bay</b><br /><em>beach</em>");
+  L.marker([-34.045370053873896, 18.352274894714355]).addTo(map).bindPopup("<b>Hout Bay</b><br /><em>beach</em>");
 
-    L.marker([-34.129772721196595, 18.44908118247986]).addTo(map).bindPopup("<b>Harbour House Kalk Bay</b><br /><em>restaurant</em>");
+  L.marker([-34.129772721196595, 18.44908118247986]).addTo(map).bindPopup("<b>Harbour House Kalk Bay</b><br /><em>restaurant</em>");
 
-    L.marker([-34.41977914929845, 19.244163036346436]).addTo(map).bindPopup("<b> Hermanus - Bientang's Cave</b><br /><em>restaurant & wine bar</em>");
+  L.marker([-34.41977914929845, 19.244163036346436]).addTo(map).bindPopup("<b> Hermanus - Bientang's Cave</b><br /><em>restaurant & wine bar</em>");
 
-    L.marker([-33.3615026710643, 18.27249526977539]).addTo(map).bindPopup("<b>Khwa ttu</b><br /><em>adventure camp</em>");
+  L.marker([-33.3615026710643, 18.27249526977539]).addTo(map).bindPopup("<b>Khwa ttu</b><br /><em>adventure camp</em>");
 
-    L.marker([-33.16543280230457, 18.108901977539062]).addTo(map).bindPopup("<b>West Coast</b><br /><em>national park</em>");
+  L.marker([-33.16543280230457, 18.108901977539062]).addTo(map).bindPopup("<b>West Coast</b><br /><em>national park</em>");
 
-    L.marker([-33.97091154130015, 18.78666400909424]).addTo(map).bindPopup("<b>Eagle Encounters</b><br /><em>wildlife sanctuary</em>");
+  L.marker([-33.97091154130015, 18.78666400909424]).addTo(map).bindPopup("<b>Eagle Encounters</b><br /><em>wildlife sanctuary</em>");
 
-  </script>
-
-
+</script>

@@ -1,0 +1,230 @@
+<!-- Custom leaflet popup -->
+<style>
+    .leaflet-popup-content-wrapper {
+        border-radius: 5;
+        background: rgb(90, 90, 90);
+        color: #fff;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .leaflet-popup-content {
+        width: 260px;
+        margin: 10px;
+    }
+
+    .leaflet-popup-tip {
+        background: rgb(90, 90, 90);
+    }
+
+    .leaflet-popup-close-button {
+        display: none;
+    }
+</style>
+
+<section>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/altiplano.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>altiplano</h5>
+                            <h6>andes cordillera</h6>
+                        </figcaption><a href="https://fr.wikipedia.org/wiki/Altiplano" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/arequipa.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>arequipa</h5>
+                            <h6>misti volcano</h6>
+                        </figcaption><a
+                            href="https://www.tripadvisor.fr/Attraction_Review-g294313-d776566-Reviews-Volcan_Misti-Arequipa_Arequipa_Region.html" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/cusco.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>cusco</h5>
+                            <h6>plaza de armas</h6>
+                        </figcaption><a
+                            href="https://www.theonlyperuguide.com/peru-guide/cusco/highlights/plaza-de-armas-cusco/" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/la paz.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>la paz</h5>
+                            <h6>mercado de brujas</h6>
+                        </figcaption><a
+                            href="http://www.ameriquedusud.org/decouvrez-un-monde-magique-au-marche-des-sorcieres/" target="_blank"></a>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/lac titicaca.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>lago titicaca</h5>
+                            <h6>lago más alto del mundo</h6>
+                        </figcaption><a href="https://www.routard.com/guide_voyage_lieu/2817-lac_titicaca.htm" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/miraflores-lima.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>lima</h5>
+                            <h6>miraflores</h6>
+                        </figcaption><a href="https://www.routard.com/guide_voyage_lieu/9304-miraflores.htm" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/moray.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>moray</h5>
+                            <h6>sitio inca</h6>
+                        </figcaption><a href="https://www.voyageperou.info/vallee-sacree-maras-moray/" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/ollantaytambo.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>ollantaytambo</h5>
+                            <h6>fortaleza inca</h6>
+                        </figcaption><a href="https://www.voyageperou.info/ollantaytambo-vallee-sacree/" target="_blank"></a>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/puno.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>puno</h5>
+                            <h6>mirador el condor</h6>
+                        </figcaption><a href="https://www.routard.com/guide_voyage_lieu/3356-puno.htm" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/sacsayhuaman.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>sacsayhuaman</h5>
+                            <h6>fortaleza inca</h6>
+                        </figcaption><a href="https://www.routard.com/guide_voyage_lieu/6823-sacsayhuaman.htm" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/saline de maras.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>saline de maras</h5>
+                            <h6>sitio inca</h6>
+                        </figcaption><a href="https://www.voyageperou.info/vallee-sacree-maras-moray/" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/urubamba.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>urubamba</h5>
+                            <h6>valle sagrado</h6>
+                        </figcaption><a href="https://www.voyageperou.info/que-faire-a-urubamba/" target="_blank"></a>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/copacabana.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>copacabana</h5>
+                            <h6>ciudad</h6>
+                        </figcaption><a href="https://www.routard.com/guide_voyage_lieu/8738-copacabana.htm" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/isla taquile.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>lago titicaca</h5>
+                            <h6>isla taquile</h6>
+                        </figcaption><a href="https://www.routard.com/guide_voyage_lieu/7199-isla_de_taquile.htm" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/isla uros.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>lago titicaca</h5>
+                            <h6>isla uros</h6>
+                        </figcaption><a href="https://www.routard.com/guide_voyage_lieu/7198-uros.htm" target="_blank"></a>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure class="snip1584"><img src="ressources/images/maps/images-pb/santa catalina.jpg" alt="sample87" />
+                        <figcaption>
+                            <h5>arequipa</h5>
+                            <h6>monasterio<br>de santa catalina</h6>
+                        </figcaption><a
+                            href="https://www.terresdesandes.org/au-programme/destinations/details/8/183-le-couvent-santa-catalina-a-arequipa.html" target="_blank"></a>
+                    </figure>
+                </div>
+
+                <!-- Map size -->
+                <div class="container">
+                    <div class="row">
+                        <div id="mapid" style="width: 100%; height: 80vh; position: relative"></div>
+                    </div>
+                </div>
+            </div>
+</section>
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+    crossorigin=""></script>
+
+<script>
+
+    let map = L.map('mapid')
+        .setView([-13.453737213419249, -71.927490234375], 6); // Choose a locality -[lat, lng] zoom property-
+
+    // Map property
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic3RlaWxsZXQiLCJhIjoiY2p1d2YxNjBxMDI5cTQ0bzl0Z2VxYTVtbSJ9.pxMBcq3xS5NN9bN2F2tiBA', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets',
+        accessToken: 'your.mapbox.access.token'
+    }).addTo(map);
+
+    // Create a marker with a popup message
+    L.marker([-15.490738864633391, -70.9332275390625]).addTo(map).bindPopup("<b>Altiplano</b><br /><em>andes cordillera</em>");
+
+    L.marker([-16.29756814830712, -71.40581130981445]).addTo(map).bindPopup("<b>Arequipa</b><br /><em>misti volcano</em>");
+
+    L.marker([-13.516742352566386, -71.97876334190369]).addTo(map).bindPopup("<b>Cusco</b><br /><em>plaza de armas</em>");
+
+    L.marker([-16.496506211255323, -68.13892364501953]).addTo(map).bindPopup("<b>La Paz</b><br /><em>mercado de brujas</em>");
+
+    L.marker([-15.858315575433952, -69.312744140625]).addTo(map).bindPopup("<b>Lago Titicaca</b><br /><em>lago más alto del mundo</em>");
+
+    L.marker([-12.119054371895512, -77.02909469604492]).addTo(map).bindPopup("<b>Lima</b><br /><em>miraflores</em>");
+
+    L.marker([-13.329660840637029, -72.1957540512085]).addTo(map).bindPopup("<b>moray</b><br /><em>sitio inca</em>");
+
+    L.marker([-13.315337014454318, -72.20920801162718]).addTo(map).bindPopup("<b>Ollantaytambo</b><br /><em>fortaleza inca</em>");
+
+    L.marker([-15.847189769102368, -70.02996683120726]).addTo(map).bindPopup("<b>Puno</b><br /><em>mirador el condor</em>");
+
+    L.marker([-13.505486320161403, -71.98143482208252]).addTo(map).bindPopup("<b>Sacsayhuaman</b><br /><em>fortaleza inca</em>");
+
+    L.marker([-13.30226526143195, -72.15459823608398]).addTo(map).bindPopup("<b>Saline de Maras</b><br /><em>sitio inca</em>");
+
+    L.marker([-13.341687188166413, -72.07992553710938]).addTo(map).bindPopup("<b>Urubamba</b><br /><em>valle sagrado</em>");
+
+    L.marker([-16.165754309872717, -69.0864086151123]).addTo(map).bindPopup("<b>Copacabana</b><br /><em>ciudad</em>");
+
+    L.marker([-15.770613575331293, -69.68456268310547]).addTo(map).bindPopup("<b>Lago Titicaca</b><br /><em>isla taquile</em>");
+
+    L.marker([-15.798530388479715, -69.93484497070312]).addTo(map).bindPopup("<b>Lago Titicaca</b><br /><em>isla uros</em>");
+
+    L.marker([-16.39511472571944, -71.53667092323303]).addTo(map).bindPopup("<b>Arequipa</b><br /><em>monasterio de santa catalina</em>");
+
+</script>

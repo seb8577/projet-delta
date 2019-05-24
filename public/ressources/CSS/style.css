@@ -22,14 +22,14 @@
 */
 
 /* CSS DIRECTORY
-        1.  global
-        1.1 articles handlebars
-        2.  header
-        3.  page 1
-        4.  pagination
-        5.  footer
+        1.    global
+        1.1   articles handlebars
+        2.    login
+        3.    header
+        4.    page 1
+        5.    pagination
+        6.    footer
 */
-
 
 /* GLOBAL */
 html {
@@ -39,6 +39,16 @@ html {
 h1 {
     color: #fff;
     font-family: 'Comfortaa', 'Arial', sans-serif;
+    text-align: center;
+}
+
+h1:after {
+  display: block;
+  height: 3px;
+  width: 150px;
+  background-color: #fff;
+  content: " ";
+  margin: 0 auto;
 }
 
 h2 {
@@ -58,7 +68,38 @@ h5{
     color: #fff!important;
 }
 
+p {
+  color: #000;
+}
+
+/* error404 */
+.error404 {
+  color: #fff;
+  text-align: center;
+}
+
+/* LOGIN */
+label {
+  color: #fff;
+}
+
 /* ARTICLES HANDLEBARS */
+.article-title2 {
+  margin-bottom: 20px;
+}
+
+.p-text2 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 120%;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+#exampleFormControlFile1{
+  color: #fff;
+}
+
 .section{
     padding: 0;
     padding-bottom: 47px;
@@ -84,7 +125,7 @@ h5{
     margin-right: auto;
 }
 
-/* LINKS */
+/* MENU NAVBAR */
 .container-menu {
     background-color: #000;
 }
@@ -165,7 +206,13 @@ a:hover {
 /* PAGE1 */
 section {
     background-color: #392c22;
-    padding-bottom: 50px;
+    background-color: #392c22;
+/* background-image: url("data:image/svg+xml,%3Csvg width='24' height='20' viewBox='0 0 24 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 18c0-1.105.887-2 1.998-2 1.104 0 2-.895 2.002-1.994V14v6h-4v-2zM0 13.998C0 12.895.888 12 2 12c1.105 0 2 .888 2 2 0 1.105.888 2 2 2 1.105 0 2 .888 2 2v2H0v-6.002zm16 4.004A1.994 1.994 0 0 1 14 20c-1.105 0-2-.887-2-1.998v-4.004A1.994 1.994 0 0 0 10 12c-1.105 0-2-.888-2-2 0-1.105-.888-2-2-2-1.105 0-2-.887-2-1.998V1.998A1.994 1.994 0 0 0 2 0a2 2 0 0 0-2 2V0h8v2c0 1.105.888 2 2 2 1.105 0 2 .888 2 2 0 1.105.888 2 2 2 1.105 0 2-.888 2-2 0-1.105.888-2 2-2 1.105 0 2-.888 2-2V0h4v6.002A1.994 1.994 0 0 1 22 8c-1.105 0-2 .888-2 2 0 1.105-.888 2-2 2-1.105 0-2 .887-2 1.998v4.004z' fill='%23473528' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    padding-bottom: 50px; */
+}
+
+.p-date {
+  color: #000;
 }
 
 .p-text {
@@ -177,7 +224,7 @@ section {
 .bgbox {
     background-color: #fff;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
 }
 
 
@@ -197,7 +244,7 @@ h2:after {
     display: inline-block;
     outline: none;
     position: relative;
-
+    margin: 20px;
   }
   
   .snip1582:before,
@@ -310,39 +357,19 @@ body {
     background-color: #392c22;
 }
 
-h1 {
-    color: #e3c0a6;
-    font-family: 'Comfortaa', 'Arial', sans-serif;
-    text-align: center;
-    padding: 20px;
-}
-
 h5{
   color: #000;
   font-family: 'Comfortaa', 'Arial', sans-serif;
 }
 
-p {
-    color: #000;
-    margin: 31px;
+.contact{
+  color: #fff;
 }
 
 /* HEADER */
-/* header {
-  background-color: #000;
-} */
 
 .container-header{
     padding: 25px;
-}
-
-h1:after {
-    display: block;
-    height: 5px;
-    width: 150px;
-    background-color: #392c22;
-    content: "";
-    margin: 0 auto;
 }
 
 /* PROFIL */
