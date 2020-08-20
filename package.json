@@ -9,7 +9,7 @@
   "author": "sébastien teillet",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "bulma": "^0.7.4",
     "connect-flash": "^0.1.1",
